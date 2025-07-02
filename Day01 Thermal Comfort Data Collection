@@ -1,0 +1,20 @@
+#Thermal comfort Data collection survey
+print("Thermal Comfort Data Collection")
+
+#Asking the user for their information (input, float, and int)
+
+name = input("Enter their name: ")
+age = int(input("Enter their age: "))
+gender = input("Enter their gender: ")
+room = input("The room of the occupant observation: ")
+time = float(input("Time of the observation: "))
+temperature = float(input("Enter the indoor temperature (C): "))
+
+#Printing the data (print - string and variable, non-graphic literals)
+
+print("\nSurvey Summary:")
+print("\nName: " + name)
+print("Age: " + str(age))
+print("Room: " + room)
+print("Time: " + str(time))
+print("Temperature: " + str(temperature) + " C")
