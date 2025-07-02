@@ -1,0 +1,43 @@
+# Importing pandas for data storing in data frame and visualisation
+
+import pandas as pd
+
+#Thermal Comfort Survey - Collecting participant data and organising
+
+print("Thermal Comfort Data Collection")
+
+#An empty list to store all participant responses 
+
+responses = []
+
+while True:
+    name = input("Enter their name: ")
+    age = int(input("Enter their age: "))
+    gender = input("Enter their gender(f/m): ")
+    room = input("The room of the occupant observation: ")
+    time = float(input("Time of the observation: "))
+    temperature = float(input("Enter the indoor temperature (C): "))
+    
+    #Storing the input data as a dictionary in the list
+    
+    responses.append({
+    "Name":name,
+    "Age":age,
+    "Room":room,
+    "Time":time,
+    "Temperature":temperature
+    })
+    
+    # Continuation of while loop or to break it
+    
+    more=input("Do you have more participants? (y/n)")
+    if (more=="n"):
+        break
+
+# Converting list of responses to a DataFrame
+
+df = pd.DataFrame(responses)
+print (df)
+
+
+
