@@ -1,0 +1,37 @@
+# Function to add
+def add():
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    print(num1 + num2)
+
+# Function to subtract
+def sub():
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    print(num1 - num2)
+
+# Function to multiply
+def mult():
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    print(num1 * num2)
+
+# Function to divide
+def div():
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    print(num1 / num2)
+
+operation = input("Enter what operation you want to perform (+, -, *, /): ")
+
+# Calling the function 
+if operation == '+':
+    add()
+elif operation == '-':
+    sub()
+elif operation == '*':
+    mult()
+elif operation == '/':
+    div()
+else:
+    print("Invalid operation - please enter one of the options above")
